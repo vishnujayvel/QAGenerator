@@ -1,0 +1,1308 @@
+ INFO (OpenAryhpe.java:124) - OpenAryhpe started at 2014-12-09 21:46:28
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Narain, is, an, asshole]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Narain is an asshole
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [44.382]
+    (NP [15.069] (NNP [12.414] Narain))
+    (VP [23.144] (VBZ [0.144] is)
+      (NP [17.806] (DT [3.221] an) (NN [12.602] asshole)))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Narain is an asshole 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Narain, is, an, asshole]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Narain, is, an, asshole]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (NP (NNP Narain-1))
+    (VP (VBZ is-2)
+      (NP (DT an-3) (NN asshole-4)))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (NP (NNP Narain-1))
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX is-2))
+      (NP (DT an-3) (NN asshole-4)))))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (NNP Narain-1))
+    (VP
+      (NP (DT an-3) (NN asshole-4)))))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (NNP Narain-1))
+    (VP
+      (NP (DT an-3) (NN asshole-4)))))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"Narain"; POS: NNP; NE types: NEperson}, {"asshole"; POS: NN}]
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [It, is, wrong, to, steel, money]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :It is wrong to steel money
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [41.484]
+    (NP [3.971] (PRP [2.721] It))
+    (VP [31.343] (VBZ [0.144] is)
+      (ADJP [26.473] (JJ [5.879] wrong)
+        (PP [18.438] (TO [0.003] to)
+          (NP [16.546] (NN [6.877] steel) (NN [5.510] money)))))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: It is wrong to steel money 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [It, is, wrong, to, steel, money]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [it, is, wrong, to, steel, money]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (NP (PRP it-1))
+    (VP (VBZ is-2)
+      (ADJP (JJ wrong-3)
+        (PP (TO to-4)
+          (NP (NN steel-5) (NN money-6)))))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (NP (PRP it-1))
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX is-2))
+      (ADJP (JJ wrong-3)
+        (PP (TO to-4)
+          (NP (NN steel-5) (NN money-6)))))))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (PRP it-1))
+    (VP
+      (ADJP (JJ wrong-3)
+        (PP (TO to-4)
+          (NP (NN steel-5) (NN money-6)))))))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (PRP it-1))
+    (VP
+      (ADJP (JJ wrong-3)
+        (PP (TO to-4)
+          (NP (NN steel-5) (NN money-6)))))))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"It"; POS: PRP}, {"wrong"; POS: JJ}, {"steel"; POS: NN; NE types: NEmaterial, NEmetal}, {"money"; POS: NN}]
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Fuck, off]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Fuck off
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [19.409]
+    (VP [18.923] (VB [11.650] Fuck)
+      (PRT [2.248] (RP [2.182] off)))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Fuck off 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Fuck, off]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Fuck, off]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (VP (VB Fuck-1)
+      (PRT (RP off-2)))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX-VB do))
+      (VB fuck)
+      (PRT (RP off-2)))))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX-VB do))
+    (VP (VB fuck)
+      (PRT (RP off-2)))))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX-VB do))
+    (VP (VB fuck)
+      (PRT (RP off-2)))))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"Fuck"; POS: NNP; NE types: NEfilm}]
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Dick]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Dick
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (NP [12.191] (NNP [8.916] Dick)))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Dick 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Dick]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Dick]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (NP (NNP Dick-1)))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:242) - No verb found here, returning null.
+DEBUG (VerbDecomposer.java:243) - Tree: (ROOT
+  (NP (NNP Dick-1)))
+
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [You, are, a, dick]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :You are a dick
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [34.565]
+    (NP [5.962] (PRP [4.712] You))
+    (VP [22.433] (VBP [0.127] are)
+      (NP [15.788] (DT [1.419] a) (NN [12.386] dick)))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: You are a dick 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [You, are, a, dick]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [you, are, a, dick]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (NP (PRP you-1))
+    (VP (VBP are-2)
+      (NP (DT a-3) (NN dick-4)))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (NP (PRP you-1))
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX are-2))
+      (NP (DT a-3) (NN dick-4)))))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX are-2))
+    (NP (PRP you-1))
+    (VP
+      (NP (DT a-3) (NN dick-4)))))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX are-2))
+    (NP (PRP you-1))
+    (VP
+      (NP (DT a-3) (NN dick-4)))))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"You"; POS: PRP}, {"dick"; POS: NN}]
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Everything, is, going, to, change, !, !, !]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Everything is going to change !!!
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (SQ [53.373]
+    (NP [12.897] (NN [9.765] Everything))
+    (VP [19.996] (VBZ [0.144] is)
+      (VP [14.957] (VBG [3.631] going)
+        (S [8.940]
+          (VP [8.675] (TO [0.011] to)
+            (VP [8.645] (VB [5.597] change))))))
+    (. [4.353] !) (. [4.353] !) (. [4.353] !)))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Everything is going to change !!! 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Everything, is, going, to, change, !, !, !]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [everything, is, going, to, change, !, !, !]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (SQ
+    (NP (NN everything-1))
+    (VP (VBZ is-2)
+      (VP (VBG going-3)
+        (S
+          (VP (TO to-4)
+            (VP (VB change-5))))))
+    (. !-6) (. !-7) (. !-8)))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:242) - No verb found here, returning null.
+DEBUG (VerbDecomposer.java:243) - Tree: (ROOT
+  (SQ
+    (NP (NN everything-1))
+    (VP (VBZ is-2)
+      (VP (VBG going-3)
+        (S
+          (VP (TO to-4)
+            (VP (VB change-5))))))
+    (. !-6) (. !-7) (. !-8)))
+
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [-LRB-, A, -LRB-, A, -LRB-, B, -LRB-, B]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :[A[A[B[B
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (NP [2047.698] (-LRB- [0.638] -LRB-)
+    (NP [10.817] (NNP [7.756] A))
+    (PP [2031.684] (IN [1000.000] -LRB-)
+      (NP [1031.283] (DT [4.555] A) (-LRB- [0.638] -LRB-) (NN [6.674] B) (CD [1000.000] -LRB-) (NN [6.674] B)))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: [A[A[B[B 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [-LRB-, A, -LRB-, A, -LRB-, B, -LRB-, B]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [-LRB-, A, -LRB-, A, -LRB-, B, -LRB-, B]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (NP (-LRB- -LRB--1)
+    (NP (NNP A-2))
+    (PP (IN -LRB--3)
+      (NP (DT A-4) (-LRB- -LRB--5) (NN B-6) (CD -LRB--7) (NN B-8)))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:242) - No verb found here, returning null.
+DEBUG (VerbDecomposer.java:243) - Tree: (ROOT
+  (NP (-LRB- -LRB--1)
+    (NP (NNP A-2))
+    (PP (IN -LRB--3)
+      (NP (DT A-4) (-LRB- -LRB--5) (NN B-6) (CD -LRB--7) (NN B-8)))))
+
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Everything, is, going, to, change]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Everything is going to change
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [38.130]
+    (NP [12.743] (NNP [10.088] Everything))
+    (VP [19.217] (VBZ [0.144] is)
+      (VP [14.957] (VBG [3.631] going)
+        (S [8.940]
+          (VP [8.675] (TO [0.011] to)
+            (VP [8.645] (VB [5.597] change))))))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Everything is going to change 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Everything, is, going, to, change]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [everything, is, going, to, change]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (NP (NN everything-1))
+    (VP (VBZ is-2)
+      (VP (VBG going-3)
+        (S
+          (VP (TO to-4)
+            (VP (VB change-5))))))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:145) - VPs with two or more verbs.
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (NP (NN everything-1))
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX is-2))
+      (VP (VBG going-3)
+        (S
+          (VP (TO to-4)
+            (VP (VB change-5))))))))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (NN everything-1))
+    (VP
+      (VP (VBG going-3)
+        (S
+          (VP (TO to-4)
+            (VP (VB change-5))))))))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (NN everything-1))
+    (VP
+      (VP (VBG going-3)
+        (S
+          (VP (TO to-4)
+            (VP (VB change-5))))))))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"Everything"; POS: NNP}, {"going"; POS: VBG}, {"change"; POS: VB}]
+ INFO (OpenAryhpe.java:124) - OpenAryhpe started at 2014-12-09 22:53:39
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [My, name, is, Vishnu]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :My name is Vishnu
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [44.089]
+    (NP [17.137] (PRP$ [5.415] My) (NN [7.045] name))
+    (VP [20.783] (VBZ [0.144] is)
+      (NP [15.445] (NNP [11.525] Vishnu)))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: My name is Vishnu 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [My, name, is, Vishnu]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [my, name, is, Vishnu]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (NP (PRP$ my-1) (NN name-2))
+    (VP (VBZ is-3)
+      (NP (NNP Vishnu-4)))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (NP (PRP$ my-1) (NN name-2))
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX is-3))
+      (NP (NNP Vishnu-4)))))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX is-3))
+    (NP (PRP$ my-1) (NN name-2))
+    (VP
+      (NP (NNP Vishnu-4)))))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX is-3))
+    (NP (PRP$ my-1) (NN name-2))
+    (VP
+      (NP (NNP Vishnu-4)))))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"My"; POS: PRP$}, {"Vishnu"; POS: NNP; NE types: NEperson}]
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Good, morning]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Good morning
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (INTJ [7.312] (JJ [0.718] Good) (NN [1.794] morning)))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Good morning 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Good, morning]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [good, morning]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (NP (JJ good-1) (NN morning-2)))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:242) - No verb found here, returning null.
+DEBUG (VerbDecomposer.java:243) - Tree: (ROOT
+  (NP (JJ good-1) (NN morning-2)))
+
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Narain, is, a, jerk]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Narain is a jerk
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [42.364]
+    (NP [15.069] (NNP [12.414] Narain))
+    (VP [21.125] (VBZ [0.144] is)
+      (NP [15.788] (DT [1.419] a) (NN [12.386] jerk)))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Narain is a jerk 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Narain, is, a, jerk]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Narain, is, a, jerk]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (NP (NNP Narain-1))
+    (VP (VBZ is-2)
+      (NP (DT a-3) (NN jerk-4)))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (NP (NNP Narain-1))
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX is-2))
+      (NP (DT a-3) (NN jerk-4)))))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (NNP Narain-1))
+    (VP
+      (NP (DT a-3) (NN jerk-4)))))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (NNP Narain-1))
+    (VP
+      (NP (DT a-3) (NN jerk-4)))))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"Narain"; POS: NNP; NE types: NEperson}, {"jerk"; POS: NN}]
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Today, is, a, goodday]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Today is a goodday
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [39.739]
+    (NP [11.927] (NNP [9.271] Today))
+    (VP [21.642] (VBZ [0.144] is)
+      (NP [16.305] (DT [1.419] a) (NN [12.903] goodday)))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Today is a goodday 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Today, is, a, goodday]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Today, is, a, goodday]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (NP (NNP Today-1))
+    (VP (VBZ is-2)
+      (NP (DT a-3) (NN goodday-4)))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (NP (NNP Today-1))
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX is-2))
+      (NP (DT a-3) (NN goodday-4)))))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (NNP Today-1))
+    (VP
+      (NP (DT a-3) (NN goodday-4)))))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (NNP Today-1))
+    (VP
+      (NP (DT a-3) (NN goodday-4)))))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"Today"; POS: NNP; NE types: NEnewspaper}, {"goodday"; POS: NN}]
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Deccan, chronicle, has, come]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Deccan chronicle has come
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [46.817]
+    (NP [28.951] (NN [12.592] Deccan) (NN [11.217] chronicle))
+    (VP [11.696] (VBZ [0.028] has)
+      (VP [8.145] (VBN [5.785] come)))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Deccan chronicle has come 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Deccan, chronicle, has, come]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [deccan, chronicle, has, come]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (NP (NN deccan-1) (NN chronicle-2))
+    (VP (VBZ has-3)
+      (VP (VBN come-4)))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:145) - VPs with two or more verbs.
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (NP (NN deccan-1) (NN chronicle-2))
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX has-3))
+      (VP (VBN come-4)))))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX has-3))
+    (NP (NN deccan-1) (NN chronicle-2))
+    (VP
+      (VP (VBN come-4)))))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX has-3))
+    (NP (NN deccan-1) (NN chronicle-2))
+    (VP
+      (VP (VBN come-4)))))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"Deccan chronicle"; POS: COMPOUND; NE types: NEorganization}, {"Deccan"; POS: NNP}, {"chronicle"; POS: NN}, {"come"; POS: VBN}]
+ INFO (OpenAryhpe.java:124) - OpenAryhpe started at 2014-12-13 22:06:01
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, is, a, calm, person]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Vishnu is a calm person
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [48.857]
+    (NP [14.413] (NNP [11.757] Vishnu))
+    (VP [28.275] (VBZ [0.144] is)
+      (NP [22.938] (DT [1.419] a) (NN [10.236] calm) (NN [7.504] person)))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Vishnu is a calm person 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, is, a, calm, person]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, is, a, calm, person]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (NP (NNP Vishnu-1))
+    (VP (VBZ is-2)
+      (NP (DT a-3) (NN calm-4) (NN person-5)))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (NP (NNP Vishnu-1))
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX is-2))
+      (NP (DT a-3) (NN calm-4) (NN person-5)))))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (NNP Vishnu-1))
+    (VP
+      (NP (DT a-3) (NN calm-4) (NN person-5)))))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (NNP Vishnu-1))
+    (VP
+      (NP (DT a-3) (NN calm-4) (NN person-5)))))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"Vishnu"; POS: NNP; NE types: NEperson}, {"calm"; POS: JJ}, {"person"; POS: NN}]
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, is, a, calm, person, and, he, got, into, Amazon]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Vishnu is a calm person and he got into Amazon
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (NP [79.179]
+    (S [79.179]
+      (S [43.244]
+        (NP [14.413] (NNP [11.757] Vishnu))
+        (VP [28.275] (VBZ [0.144] is)
+          (NP [22.938] (DT [1.419] a) (NN [10.236] calm) (NN [7.504] person))))
+      (CC [0.018] and)
+      (S [31.690]
+        (NP [3.133] (PRP [1.883] he))
+        (VP [28.001] (VBD [4.998] got)
+          (PP [18.551] (IN [3.801] into)
+            (NP [14.077] (NNP [11.603] Amazon))))))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Vishnu is a calm person and he got into Amazon 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, is, a, calm, person, and, he, got, into, Amazon]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, is, a, calm, person, and, he, got, into, Amazon]
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (S < PP|ADJP|ADVP|S|SBAR=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (NP (NNP Vishnu-1))
+        (VP (VBZ is-2)
+          (NP (DT a-3) (NN calm-4) (NN person-5))))
+      (CC and-6)
+      (S
+        (NP (PRP he-7))
+        (VP (VBD got-8)
+          (PP (IN into-9)
+            (NP (NNP Amazon-10))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (S < PP|ADJP|ADVP|S|SBAR=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (NP (NNP Vishnu-1))
+        (VP (VBZ is-2)
+          (NP (DT a-3) (NN calm-4) (NN person-5))))
+      (CC and-6)
+      (UNMV-S
+        (NP (PRP he-7))
+        (VP (VBD got-8)
+          (PP (IN into-9)
+            (NP (NNP Amazon-10))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (VP (VBZ is-2)
+          (NP (DT a-3) (NN calm-4) (NN person-5))))
+      (CC and-6)
+      (UNMV-S
+        (NP (PRP he-7))
+        (VP (VBD got-8)
+          (PP (IN into-9)
+            (NP (NNP Amazon-10))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (NP (DT a-3) (NN calm-4) (NN person-5))))
+      (CC and-6)
+      (UNMV-S
+        (NP (PRP he-7))
+        (VP (VBD got-8)
+          (PP (IN into-9)
+            (NP (NNP Amazon-10))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (UNMV-NP (DT a-3) (NN calm-4) (NN person-5))))
+      (CC and-6)
+      (UNMV-S
+        (NP (PRP he-7))
+        (VP (VBD got-8)
+          (PP (IN into-9)
+            (NP (NNP Amazon-10))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (UNMV-NP (DT a-3) (NN calm-4) (NN person-5))))
+      (CC and-6)
+      (UNMV-S
+        (UNMV-NP (PRP he-7))
+        (VP (VBD got-8)
+          (PP (IN into-9)
+            (NP (NNP Amazon-10))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (UNMV-NP (DT a-3) (NN calm-4) (NN person-5))))
+      (CC and-6)
+      (UNMV-S
+        (UNMV-NP (PRP he-7))
+        (UNMV-VP (VBD got-8)
+          (PP (IN into-9)
+            (NP (NNP Amazon-10))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (UNMV-NP (DT a-3) (NN calm-4) (NN person-5))))
+      (CC and-6)
+      (UNMV-S
+        (UNMV-NP (PRP he-7))
+        (UNMV-VP (VBD got-8)
+          (UNMV-PP (IN into-9)
+            (NP (NNP Amazon-10))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (UNMV-NP (DT a-3) (NN calm-4) (NN person-5))))
+      (CC and-6)
+      (UNMV-S
+        (UNMV-NP (PRP he-7))
+        (UNMV-VP (VBD got-8)
+          (UNMV-PP (IN into-9)
+            (UNMV-NP (NNP Amazon-10))))))))
+
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (UNMV-NP (DT a-3) (NN calm-4) (NN person-5))))
+      (CC and-6)
+      (UNMV-S
+        (UNMV-NP (PRP he-7))
+        (UNMV-VP (VBD got-8)
+          (UNMV-PP (IN into-9)
+            (UNMV-NP (NNP Amazon-10))))))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:242) - No verb found here, returning null.
+DEBUG (VerbDecomposer.java:243) - Tree: (ROOT
+  (NP
+    (S
+      (S
+        (NP (NNP Vishnu-1))
+        (VP (VBZ is-2)
+          (NP (DT a-3) (NN calm-4) (NN person-5))))
+      (CC and-6)
+      (S
+        (NP (PRP he-7))
+        (VP (VBD got-8)
+          (PP (IN into-9)
+            (NP (NNP Amazon-10))))))))
+
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, ,, a, calm, person, got, into, Amazon]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Vishnu, a calm person got into Amazon
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [76.655]
+    (ADVP [15.385] (RB [15.271] Vishnu))
+    (, [0.000] ,)
+    (NP [23.386] (DT [1.419] a) (NN [10.236] calm) (NN [7.504] person))
+    (VP [28.001] (VBD [4.998] got)
+      (PP [18.551] (IN [3.801] into)
+        (NP [14.077] (NNP [11.603] Amazon))))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Vishnu, a calm person got into Amazon 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, ,, a, calm, person, got, into, Amazon]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, ,, a, calm, person, got, into, Amazon]
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (S < PP|ADJP|ADVP|S|SBAR=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (S
+    (UNMV-ADVP (RB Vishnu-1))
+    (, ,-2)
+    (NP (DT a-3) (NN calm-4) (NN person-5))
+    (VP (VBD got-6)
+      (PP (IN into-7)
+        (NP (NNP Amazon-8))))))
+
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (UNMV-ADVP (RB Vishnu-1))
+    (, ,-2)
+    (NP (DT a-3) (NN calm-4) (NN person-5))
+    (VP (VBD got-6)
+      (PP (IN into-7)
+        (NP (NNP Amazon-8))))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (ADVP (RB Vishnu-1))
+    (, ,-2)
+    (NP (DT a-3) (NN calm-4) (NN person-5))
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX-VBD did))
+      (VB get)
+      (PP (IN into-7)
+        (NP (NNP Amazon-8))))))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX-VBD did))
+    (ADVP (RB Vishnu-1))
+    (, ,-2)
+    (NP (DT a-3) (NN calm-4) (NN person-5))
+    (VP (VB get)
+      (PP (IN into-7)
+        (NP (NNP Amazon-8))))))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX-VBD did))
+    (ADVP (RB Vishnu-1))
+    (, ,-2)
+    (NP (DT a-3) (NN calm-4) (NN person-5))
+    (VP (VB get)
+      (PP (IN into-7)
+        (NP (NNP Amazon-8))))))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"Vishnu,"; POS: COMPOUND; NE types: NEperson}, {"Vishnu"; POS: NNP; NE types: NEperson}, {"calm"; POS: JJ}, {"person"; POS: NN}, {"Amazon"; POS: NNP; NE types: NElocation}]
+ INFO (OpenAryhpe.java:124) - OpenAryhpe started at 2014-12-13 22:23:20
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, is, good, and, he, is, from, Chennai]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Vishnu is good and he is from Chennai
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (NP [56.548]
+    (S [56.548]
+      (S [25.288]
+        (NP [14.413] (NNP [11.757] Vishnu))
+        (VP [10.320] (VBZ [0.144] is)
+          (ADJP [5.450] (JJ [4.728] good))))
+      (CC [0.018] and)
+      (S [27.016]
+        (NP [3.133] (PRP [1.883] he))
+        (VP [23.327] (VBZ [0.144] is)
+          (PP [17.142] (IN [2.449] from)
+            (NP [14.020] (NNP [11.546] Chennai))))))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Vishnu is good and he is from Chennai 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, is, good, and, he, is, from, Chennai]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, is, good, and, he, is, from, Chennai]
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (S < PP|ADJP|ADVP|S|SBAR=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (NP (NNP Vishnu-1))
+        (VP (VBZ is-2)
+          (ADJP (JJ good-3))))
+      (CC and-4)
+      (S
+        (NP (PRP he-5))
+        (VP (VBZ is-6)
+          (PP (IN from-7)
+            (NP (NNP Chennai-8))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (S < PP|ADJP|ADVP|S|SBAR=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (NP (NNP Vishnu-1))
+        (VP (VBZ is-2)
+          (ADJP (JJ good-3))))
+      (CC and-4)
+      (UNMV-S
+        (NP (PRP he-5))
+        (VP (VBZ is-6)
+          (PP (IN from-7)
+            (NP (NNP Chennai-8))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (VP (VBZ is-2)
+          (ADJP (JJ good-3))))
+      (CC and-4)
+      (UNMV-S
+        (NP (PRP he-5))
+        (VP (VBZ is-6)
+          (PP (IN from-7)
+            (NP (NNP Chennai-8))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (ADJP (JJ good-3))))
+      (CC and-4)
+      (UNMV-S
+        (NP (PRP he-5))
+        (VP (VBZ is-6)
+          (PP (IN from-7)
+            (NP (NNP Chennai-8))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (UNMV-ADJP (JJ good-3))))
+      (CC and-4)
+      (UNMV-S
+        (NP (PRP he-5))
+        (VP (VBZ is-6)
+          (PP (IN from-7)
+            (NP (NNP Chennai-8))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (UNMV-ADJP (JJ good-3))))
+      (CC and-4)
+      (UNMV-S
+        (UNMV-NP (PRP he-5))
+        (VP (VBZ is-6)
+          (PP (IN from-7)
+            (NP (NNP Chennai-8))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (UNMV-ADJP (JJ good-3))))
+      (CC and-4)
+      (UNMV-S
+        (UNMV-NP (PRP he-5))
+        (UNMV-VP (VBZ is-6)
+          (PP (IN from-7)
+            (NP (NNP Chennai-8))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (UNMV-ADJP (JJ good-3))))
+      (CC and-4)
+      (UNMV-S
+        (UNMV-NP (PRP he-5))
+        (UNMV-VP (VBZ is-6)
+          (UNMV-PP (IN from-7)
+            (NP (NNP Chennai-8))))))))
+
+DEBUG (UnmovableTreeMarker.java:92) - UNMV: Root (@UNMV << NP|ADJP|VP|ADVP|PP=unmv )
+
+DEBUG (UnmovableTreeMarker.java:102) - (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (UNMV-ADJP (JJ good-3))))
+      (CC and-4)
+      (UNMV-S
+        (UNMV-NP (PRP he-5))
+        (UNMV-VP (VBZ is-6)
+          (UNMV-PP (IN from-7)
+            (UNMV-NP (NNP Chennai-8))))))))
+
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (NP
+    (S
+      (UNMV-S
+        (UNMV-NP (NNP Vishnu-1))
+        (UNMV-VP (VBZ is-2)
+          (UNMV-ADJP (JJ good-3))))
+      (CC and-4)
+      (UNMV-S
+        (UNMV-NP (PRP he-5))
+        (UNMV-VP (VBZ is-6)
+          (UNMV-PP (IN from-7)
+            (UNMV-NP (NNP Chennai-8))))))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:242) - No verb found here, returning null.
+DEBUG (VerbDecomposer.java:243) - Tree: (ROOT
+  (NP
+    (S
+      (S
+        (NP (NNP Vishnu-1))
+        (VP (VBZ is-2)
+          (ADJP (JJ good-3))))
+      (CC and-4)
+      (S
+        (NP (PRP he-5))
+        (VP (VBZ is-6)
+          (PP (IN from-7)
+            (NP (NNP Chennai-8))))))))
+
+ INFO (OpenAryhpe.java:124) - OpenAryhpe started at 2014-12-13 22:45:59
+ INFO (OpenAryhpe.java:124) - OpenAryhpe started at 2014-12-13 23:10:34
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, like, to, read, books, .]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Vishnu like to read books.
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [44.724]
+    (NP [14.413] (NNP [11.757] Vishnu))
+    (VP [29.170] (VBP [5.774] like)
+      (S [18.429]
+        (VP [18.165] (TO [0.011] to)
+          (VP [18.135] (VB [6.443] read)
+            (NP [9.658] (NNS [7.099] books))))))
+    (. [0.002] .)))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Vishnu like to read books. 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, like, to, read, books, .]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [vishnu, like, to, read, books, .]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (NP (NNP vishnu-1))
+    (VP (VBP like-2)
+      (S
+        (VP (TO to-3)
+          (VP (VB read-4)
+            (NP (NNS books-5))))))
+    (. .-6)))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (NP (NNP vishnu-1))
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX-VB do))
+      (VB like)
+      (S
+        (VP (TO to-3)
+          (VP (VB read-4)
+            (NP (NNS books-5))))))
+    (. .-6)))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX-VB do))
+    (NP (NNP vishnu-1))
+    (VP (VB like)
+      (S
+        (VP (TO to-3)
+          (VP (VB read-4)
+            (NP (NNS books-5))))))
+    (. .-6)))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX-VB do))
+    (NP (NNP vishnu-1))
+    (VP (VB like)
+      (S
+        (VP (TO to-3)
+          (VP (VB read-4)
+            (NP (NNS books-5))))))
+    (. .-6)))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"Vishnu"; POS: NNP}, {"like"; POS: IN}, {"read"; POS: VB}, {"books"; POS: NNS}]
+ INFO (OpenAryhpe.java:124) - OpenAryhpe started at 2014-12-14 15:14:35
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, is, a, good, boy]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :Vishnu is a good boy
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [45.008]
+    (NP [14.413] (NNP [11.757] Vishnu))
+    (VP [24.426] (VBZ [0.144] is)
+      (NP [19.088] (DT [1.419] a) (JJ [5.354] good) (NN [9.545] boy)))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: Vishnu is a good boy 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, is, a, good, boy]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [Vishnu, is, a, good, boy]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (NP (NNP Vishnu-1))
+    (VP (VBZ is-2)
+      (NP (DT a-3) (JJ good-4) (NN boy-5)))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (NP (NNP Vishnu-1))
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX is-2))
+      (NP (DT a-3) (JJ good-4) (NN boy-5)))))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (NNP Vishnu-1))
+    (VP
+      (NP (DT a-3) (JJ good-4) (NN boy-5)))))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX is-2))
+    (NP (NNP Vishnu-1))
+    (VP
+      (NP (DT a-3) (JJ good-4) (NN boy-5)))))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"Vishnu"; POS: NNP; NE types: NEperson}, {"good"; POS: JJ}, {"boy"; POS: NN}]
+DEBUG (TreeBreaker.java:112) - Breaking sentences.
+DEBUG (TreeBreaker.java:116) - Count of original one: 1
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [quit]
+DEBUG (TreeBreaker.java:126) - Sentence 0 :quit
+DEBUG (TreeBreaker.java:127) - (ROOT
+  (S [11.381]
+    (VP [10.895] (VB [8.116] quit))))
+
+
+DEBUG (TreeBreaker.java:283) - New answers: quit 
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [quit]
+DEBUG (StanfordParser.java:149) - Parsing sentence
+DEBUG (StanfordParser.java:154) - Tokenization: [quit]
+DEBUG (UnmovableTreeMarker.java:114) - After UNMV: (ROOT
+  (S
+    (VP (VB quit-1))))
+
+DEBUG (VerbDecomposer.java:142) - Decomposing the verb
+
+DEBUG (VerbDecomposer.java:247) - Auxiliarized Tree:
+(ROOT
+  (S
+    (VP
+      (Q-AUX (Q <quesPhrase>) (AUX-VB do))
+      (VB quit))))
+
+DEBUG (VerbDecomposer.java:253) - Moving the AUX tree to the first child of the main clause:
+
+DEBUG (VerbDecomposer.java:255) - (ROOT
+  (S
+    (Q-AUX (Q <quesPhrase>) (AUX-VB do))
+    (VP (VB quit))))
+
+DEBUG (VerbDecomposer.java:277) - Inverted Tree:
+(ROOT
+  (SQ
+    (Q-AUX (Q <quesPhrase>) (AUX-VB do))
+    (VP (VB quit))))
+
+DEBUG (QAPhraseGenerator.java:39) - Terms: [{"quit"; POS: VB}]
+ INFO (OpenAryhpe.java:390) - OpenAryhpe ended at 2014-12-14 15:15:07
